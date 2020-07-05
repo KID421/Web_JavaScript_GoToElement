@@ -6,6 +6,7 @@ window.onload = () => {
         const element = elements[index];
 
         let t = element.getAttribute("data-gte-target");
+        let o = element.getAttribute("data-gte-offset");
 
         if (t) {
 
@@ -14,7 +15,7 @@ window.onload = () => {
                 let tar = document.getElementById(t);
 
                 window.scrollTo({
-                    top: tar.offsetTop,
+                    top: tar.offsetTop - parseInt(o),
                     behavior: "smooth",
                 });
             }
