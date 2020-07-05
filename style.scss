@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    color: #252525;
+}
+
+div {
+    height: 100vh;
+    background: lightblue;
+}
+div:nth-of-type(even) {
+    background: indianred;
+}
+
+span {
+    display: inline-block;
+    font-size: 36px;
+    padding: 30px 50px 0 0;
+    cursor: pointer;
+}
+
+#back-to-top {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background: #000;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    cursor: pointer;
+}

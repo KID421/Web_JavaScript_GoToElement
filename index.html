@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前往指定元素</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="top">
+    <div>
+        <h1>前往指定元素</h1>
+        <span data-gte-target="one">前往第一區</span>
+        <span data-gte-target="second">前往第二區</span>
+    </div>
+    <div>
+        <h1 id="one">第一區</h1>
+    </div>
+    <div>
+        <h1 id="second">第二區</h1>
+    </div>
+
+    <div id="back-to-top" data-gte-target="top"></div>
+
+    <script src="./goToElement.js"></script>
+</body>
+</html>
